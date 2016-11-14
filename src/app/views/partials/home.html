@@ -1,0 +1,15 @@
+<div ng-controller='CarouselCtrl' class='header'>
+  <ng-include src='pathViewCarou'>
+  </div>
+  <div ng-controller='AtoutsCtrl' class='bg-atout'>
+    <ng-include src='pathViewAtouts'>
+    </div>
+    <div ng-controller='ProduitsCtrl'>
+      <ng-include src='pathViewProduits'>
+      </div>
+        <div ng-controller='DevisCtrl' class='devis col-md-6'>
+          <ng-include src='pathViewDevis'>
+          </div>
+          <div ng-controller='ContactsCtrl' class='bg-contact contact col-md-6'>
+            <ng-include src='pathViewContacts'>
+      </div>

@@ -1,0 +1,47 @@
+$ft : 'Raleway', sans-serif;
+
+/* COLORS */
+
+$cG : #2c3e50;
+$cJ : #fed334;
+$cB : #FFF;
+$cN : #000;
+
+/* DIMENTIONS */
+$Dm1 :100%;
+$Dm2 :100px;
+$Dm3 :300px;
+$Dm4 :500px;
+$Dm5 :350px;
+$Dm6 :50px;
+$Dm7 :100px;
+$Dm8 :70px;
+$Dm9 :95px;
+$Dm10 :110px;
+$Dm11 :24px;
+$Dm12 :14px;
+$Dm13 :0px;
+$Dm14 :400px;
+$Dm15 :170px;
+/* CSS */
+* {font-family:$ft;color:$cB;}
+body{width: $Dm1;}
+body, .devis, .carousel, .atout, .contacts{height: $Dm1;}
+nav {border-radius: $Dm13 !important;}
+p {font-size: $Dm11;}
+h2, h3 {font-weight: 300;}
+i {font-size: $Dm8 !important; border: 3px solid; @include border-radius($Dm6); width: $Dm7; height: $Dm7; line-height: $Dm9 !important; margin-top: $Dm10;}
+
+.tA {margin-top: $Dm12;}
+.pA{font-size: $Dm12;}
+.h2D, .h3D{color: $cG;}
+.bg-atout, .bg-contact{background-size: cover; background-attachment: fixed;}
+.bg-logo{width: $Dm2;height: $Dm2;}
+.header, .navbar-default, .copy {background-color:$cG;}
+.vCh{margin-top: $Dm15;} /* Vertical center HEARDER */
+.devis{background-color: $cJ;}
+.atout, .h2Fk, .h2A, i, .tA, .h2C{color:$cJ;}
+h2.text-center.h2A, .h2D, .h2C{margin-top: $Dm6 !important;}
+.atout{min-height: $Dm14;}
+.devis, .carousel, .contacts{min-height: $Dm4;}
+.product-content {height: $Dm3; background-color: $cN;}

@@ -1,0 +1,30 @@
+{
+  "name": "ang",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "damien <bouvier.damien.77@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "angular-route": "^1.5.8",
+    "angular-filter": "^0.5.11",
+    "angular-slugify": "^1.0.1",
+    "angular-messages": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "angular-modal": "^0.5.0"
+  }
+}

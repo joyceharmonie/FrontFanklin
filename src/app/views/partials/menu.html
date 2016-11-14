@@ -1,0 +1,44 @@
+<header>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">
+          <div class="bg-logo">
+          </div>
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="nav-item" ng-class="{active:isActive('/')}">
+            <a class="nav-link" href="/" >ACCUEIL <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" ng-class="{active:isActive('/albums')}">
+            <a class="nav-link" href="/albums">PRODUITS</a>
+          </li>
+          <li class="nav-item" ng-class="{active:isActive('/contact')}">
+            <a class="nav-link" href="/contact">CONTACT</a>
+          </li>
+          <li class="nav-item" ng-class="{active:isActive('/about')}">
+            <a class="nav-link" href="/about">QUI SOMMES NOUS ?</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item" ng-show="!isConnected" ng-class="{active:isActive('/signin')}">
+            <a class="nav-link" href="/signin">CONNEXION</a>
+          </li>
+          <li ng-show="isConnected">
+            <a class="nav-link" href="/logout">DECONNEXION : {{userMail}}</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+</header>
